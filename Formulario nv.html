@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario novo</title>
+  <style>
+    pre {
+      text-align: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+      border-style: solid;
+      margin-right: 366px;
+      margin-left: 366px;
+      color: rgb(156, 139, 139);
+      background-color: rgb(55, 55, 64);
+     }
+     body {
+      background-color: rgb(41, 41, 65);
+     }
+     button {
+      margin: 10px;
+      padding: 2px;
+      width: 110px;
+      background-color: rgb(108, 95, 153);
+      color: rgb(156, 139, 139);
+     }
+     input:invalid { 
+      border-color: red;
+     }
+     input:valid {
+      border-color: green;
+     }
+     input:focus {
+      border-color: rgb(108, 95, 153) !important;
+     }
+    
+  </style>
+</head>
+<body>
+
+  <pre>
+    <h1>Crie sua conta</h1>
+  Nome
+    <input type="text" name="n" id="n" required maxlength="25" minlength="2"> 
+  E-mail 
+    <input type="email" name="e" id="e" required maxlength="25" minlength="2">
+  Senha 
+    <input type="password" name="s" id="s" required maxlength="25" min="10">
+  Confirme sua senha 
+    <input type="password" name="2s" id="2s" required>
+    <button name="Enviar" id="Enviar" onclick="Enviar()">Enviar</button>
+  </pre>
+  
+</body>
+</html>

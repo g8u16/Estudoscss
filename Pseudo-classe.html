@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: darkgray;
+            border: 1px, solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        
+        }
+       div:hover{
+        background-color: green;
+       }
+       body {
+        background-image: linear-gradient(to right, rgb(22, 189, 22), rgb(10, 153, 10));
+       }
+       a {
+        color: darkslategray;
+        text-decoration: none;
+       }
+      
+       a:hover {
+        color: chartreuse;
+       }
+       a::after {
+        align-items: center;
+       }
+       a:active {
+        color: yellow;
+       }
+      
+    </style>
+</head>
+<body>
+    <div id="id1">1</div>
+    <div id="id2">2</div>
+    <div id="id3">3</div>
+    <ul>
+        <li>
+            <a href="https://www.youtube.com/cursoemvideo" target="_blank">Canal do youtube</a>
+        </li>
+        <li><a href="https://github.com/" target="_blank">Repositorio</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank">Site curso em video</a></li>
+    </ul>
+   
+ 
+    
+</body>
+</html>

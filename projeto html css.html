@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <style>
+       .esp {
+        text-align: center;
+        
+       }
+       pre {
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-style: solid;
+        padding: 80px;
+        border-color: rgb(63, 134, 255);
+      
+        
+       }
+      .Enviar {
+        text-decoration: none;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        height: 30px;
+        margin: 10px;
+        width: 80px;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.557);
+        
+      }
+      p {
+        margin: -3ch;
+      }
+    div {
+        text-align: center;
+        color: red;
+    }
+       
+    </style>
+</head>
+<body>
+    <h1 class="esp">Inscreva-se!</h1>
+<pre>
+          Digite o seu nome <input type="text" name="n1" id="n1" placeholder="Nome">
+          Digite seu sobrenome <input type="text" name="sn1" id="sn1" placeholder="Sobrenome">
+          Digite o seu e-mail <input type="email" name="m" id="m" placeholder="E-mail">
+          Digite sua senha <input type="password" name="s1" id="s1" placeholder="Senha">
+          <button href="#" class="Enviar" onclick="Enviar()">Enviar</button>
+          <p>Já é um membro? faca login</p> 
+</pre>
+<div id="id"></div>
+<Script>
+    function Enviar(){
+        var nome = document.getElementById("n1")
+        var sobrenome = document.getElementById("sn1")
+        var email = document.getElementById("m")
+        var senha = document.getElementById("s1")
+        var id = document.getElementById('id')
+        id.innerHTML = `Obrigado pelo envio!`
+        
+    }
+</Script>
+
+</body>
+</html>

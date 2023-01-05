@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de exemplo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+         .especial{
+            text-align: center;
+            
+        }
+        
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1>Site de exemplo</h1>
+        <h2>Título 1</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis sequi similique, consequatur inventore quos itaque beatae aperiam cumque dicta natus ducimus laborum nemo, esse, deserunt ad! Quidem perferendis tempore quo!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corporis distinctio commodi beatae sed ducimus id neque veniam natus ad, nostrum provident doloremque adipisci cupiditate facilis iusto eligendi similique? Debitis?</p>
+        <h2>Título 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates, ut deleniti quae porro voluptas, doloribus iste exercitationem at quidem temporibus. Similique adipisci ad odit repellendus ex ducimus eius cumque?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda optio qui in sapiente. Deserunt hic quo fugit distinctio quaerat? Dolores autem esse earum repellat rerum minus debitis voluptates possimus? Alias.</p>
+        <h2>Título 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque vel nulla veritatis at tenetur nemo, velit magnam, hic quas aliquam sit facere modi laudantium sint obcaecati explicabo. Animi, quae sunt.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum voluptatem tempore sequi repellat quia numquam laborum, labore explicabo natus! Nesciunt veniam saepe qui consequatur eaque iusto optio dolor, illum ullam.</p>
+    </main>
+    <h1 class="especial">Primeira calculadora</h1>
+
+    <input type="number" name="a1" id="a1" placeholder="número">
+    <input type="number" name="a2" id="a2" placeholder="número">
+    <br>
+    <input type="button" value="Somar" onclick="Somar()">
+    <input type="button" value="subtrai" onclick="subtrai()">
+    <input type="button" value="Multiplicar" onclick="Multiplicar()">
+    <input type="button" value="Dividir" onclick="Dividir()">
+    <div id="id"></div>
+
+
+    <script>
+        function Somar() {
+            var nu1 = document.getElementById("a1")
+            var nu2 = document.getElementById("a2")
+            var id = document.getElementById("id")
+            var n1 = Number(nu1.value)
+            var n2 = Number(nu2.value)
+            var soma = n1+n2
+            id.innerHTML = `Soma entre ${n1} é ${n2} e igual a ${soma}`
+        }
+        function subtrai(){
+            var nn1 = document.getElementById('a1')
+            var nn2 = document.getElementById('a2')
+            var id = document.getElementById('id')
+            var nq1 = Number(nn1.value)
+            var nq2 = Number(nn2.value)
+            var Subtração = nq1-nq2
+            id.innerHTML = `${nq1} menos ${nq2} é igual a ${Subtração}`
+        }
+        function Multiplicar(){
+            var ny1 = document.getElementById('a1')
+            var ny2 = document.getElementById('a2')
+            var id = document.getElementById('id')
+            var nm1 = Number(ny1.value)
+            var nm2 = Number(ny2.value)
+            var multiplica = nm1*nm2
+            id.innerHTML = `Multiplicando ${nm1} com ${nm2} temos ${multiplica}`
+        }
+        function Dividir(){
+            var nd1 = document.getElementById('a1')
+            var nd2 = document.getElementById('a2')
+            var id = document.getElementById('id')
+            var dn1 = Number(nd1.value)
+            var dn2 = Number(nd2.value)
+            var dividi = dn1/dn2
+            id.innerHTML = `${dn1} Dividido por ${dn2} é igual a ${dividi}`
+        }
+    </script>
+    <script>
+        var c = 2
+        while(c > 0){
+            console.log("Oi tudo bem?")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table, th, td { 
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td { 
+            padding: 5px 10px;
+        }
+       th {
+        background-color: rgb(65, 65, 171);
+        color: rgb(235, 233, 233);
+       }
+       * { 
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       /*O odd e aplicado a todos os elementos ímpares*/
+       table tr:nth-child(odd) {
+        background-color: rgba(253, 249, 249, 0.756);
+       }
+       /*O even e aplicado a todos os elementos pares*/
+       table tr:nth-child(even) {
+        background-color: white;
+       }
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <h3>Tabela normal</h3>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Telefone</th>
+        </tr>
+        <tr>
+            <td>Felipe</td>
+            <td>15 anos</td>
+            <td>(62) 9389-2691</td>
+        </tr>
+        <tr>
+            <td>Patricia</td>
+            <td>20 anos</td>
+            <td>(11) 9348-3245</td>
+        </tr>
+    </table>
+
+    <h3>Tabela com colspan</h3>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th colspan="2">Telefone</th>
+        </tr>
+        <tr>
+            <td>Felipe</td>
+            <td>15 anos</td>
+            <td>(62) 9389-2691</td>
+            <td>(62) 9542-3253</td>
+        </tr>
+        <tr>
+            <td>Patricia</td>
+            <td>20 anos</td>
+            <td>(11) 9348-3245</td>
+            <td>(11) 9543-3423</td>
+        </tr>
+    </table>
+    <h3>Tabela com rowspan</h3>
+    <table>
+        <tr>
+            <th>Sexo</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th colspan="2">Telefone</th>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td>Felipe</td>
+            <td>15 anos</td>
+            <td>(62) 9389-2691</td>
+            <td>(62) 9542-3253</td>
+        </tr>
+        <tr>
+            <td rowspan="2">F</td>
+            <td>Patricia</td>
+            <td>20 anos</td>
+            <td>(11) 9348-3245</td>
+            <td>(11) 9543-3423</td>
+        </tr>
+        <tr>
+            <td>Fernanda</td>
+            <td>18 anos</td>
+            <td>(11) 9824-5435</td>
+            <td>(11) 8534-5423</td>
+        </tr>
+</body>
+</html>

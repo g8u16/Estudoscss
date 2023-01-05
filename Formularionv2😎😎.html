@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario novo</title>
+  <style>
+    pre {
+      text-align: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+      border-style: solid;
+      margin-right: 366px;
+      margin-left: 366px;
+      color: rgb(156, 139, 139);
+      background-color: rgb(56, 56, 161);
+     }
+     body {
+      background-color: dodgerblue;
+     }
+     button {
+      margin: 10px;
+      padding: 2px;
+      width: 110px;
+      background-color: rgb(108, 95, 153);
+      color: rgb(156, 139, 139);
+     }
+     input:invalid { 
+      border-color: red;
+     }
+     input:valid {
+      border-color: green;
+     }
+     input:focus {
+      border-color: rgb(108, 95, 153) !important;
+     }
+     span {
+        position: relative;
+     }
+     input:invalid + span::before {
+        content: '✖';
+        color: red;
+
+     }
+     input:valid + span::before {
+      content: '✓';
+      color: green;
+     }
+     input + span::before {
+      position: absolute;
+      right: 6px;
+     }
+    
+  </style>
+</head>
+<body>
+
+  
+   <form action="https://api.staticforms.xyz/submit" method="post">
+    <pre>
+      <h1>Crie sua conta</h1>
+      <input type="hidden" name="redirectTo" value="https://www.contato.net/contato/">
+      <input type="hidden" name="accessKey" value="9aca9f88-2780-4e06-8544-28099c1cd0e4">
+    Nome
+      <input type="text" name="name" id="name" required maxlength="25" minlength="2"><span></span>
+    E-mail 
+      <input type="email" name="email" id="email" required maxlength="25" minlength="2"><span></span>
+    Senha 
+      <input type="password" name="senha" id="senha" required maxlength="25" min="10"><span></span>
+    Confirme sua senha 
+      <input type="password" name="2senha" id="2senha" required><span></span>
+      <button name="Enviar" id="Enviar" onclick="Enviar()">Enviar</button>
+    </pre>
+   </form>
+   
+</body>
+</html>
